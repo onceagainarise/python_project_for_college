@@ -14,7 +14,7 @@ color_space = st.selectbox(
     ("Grayscale", "HSV", "LAB", "Sepia")
 )
 
-# Default values
+
 saturation_scale = 1.0
 value_scale = 1.0
 sepia_intensity = 1.0
@@ -69,7 +69,7 @@ if uploaded_file:
     st.subheader("Original Image")
     st.image(image, use_container_width=True)
 
-    # Place sliders here between original and converted image
+
     
     if color_space!="Grayscale":
        st.markdown("---")
